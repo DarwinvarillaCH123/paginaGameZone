@@ -1,0 +1,236 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+background-color: #000000;
+color: #ffffff;
+}
+
+header {
+background-color: #1a1a1a;
+padding: 1rem;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+nav {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+hr {
+border: #333 0;
+height: 1px;
+margin: 20px 0;
+background-color: #00ff88;
+opacity: 0.6;
+}
+
+.logo {
+font-size: 1.8rem;
+font-weight: bold;
+color: #00ff88;
+text-decoration: none;
+}
+
+.nav-links {
+display: flex;
+gap: 2rem;
+}
+
+.nav-links a {
+color: #ffffff;
+text-decoration: none;
+font-size: 1.1rem;
+transition: color 0.3s;
+}
+
+.nav-links a:hover {
+color: #00ff88;
+}
+
+main {
+max-width: 1200px;
+margin: 2rem auto;
+padding: 0 1rem;
+}
+/* Estilo del botón */
+.dropbtn {
+    background-color:#1a1a1a;
+    color: #ffffff;
+    padding: 16px;
+    font-size: 16px;
+    border:#00ff88;
+    cursor: pointer;
+  }
+  
+  /* Contenedor del dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Opciones del dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#828282;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  /* Muestra el contenido del dropdown al pasar el cursor */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+.hero {
+position: relative;
+height: 400px;
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('https://files.oaiusercontent.com/file-6N2vXW4P6J7M5IzDODwYuzlA?se=2024-10-30T01%3A42%3A10Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df154e603-f212-4b9b-829a-0cf249dd60f4.webp&sig=SDzHqWvjMFphVwySjsw/V48wYnZWQtYfCrNWE9Fvz3w%3D');
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+border-radius: 1rem;
+margin-bottom: 2rem;
+}
+
+.hero-content {
+max-width: 800px;
+padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+margin-bottom: 1rem;
+color: #00ff88;
+}
+
+.section-title {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 1.5rem;
+color: #00ff88;
+}
+
+.game-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+margin-bottom: 2rem;
+}
+
+.game-card {
+background-color: #1a1a1a;
+border-radius: 0.5rem;
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+.game-card:hover {
+transform: translateY(-5px);
+}
+
+.game-card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+
+.game-card-content {
+padding: 1rem;
+}
+
+.game-card h3 {
+margin-bottom: 0.5rem;
+}
+
+.news-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.news-card {
+background-color: #1a1a1a;
+border-radius: 0.5rem;
+padding: 1.5rem;
+margin-bottom: 30px;
+
+}
+
+.reviews-section {
+background-color: #1a1a1a;
+padding: 2rem;
+border-radius: 1rem;
+}
+
+.review {
+margin-bottom: 1.5rem;
+padding-bottom: 1.5rem;
+border-bottom: 1px solid #333;
+}
+
+footer {
+background-color: #1a1a1a;
+padding: 2rem;
+text-align: center;
+margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+
+} 
+
+.hero-content h1 {
+font-size: 2rem;
+}
+
+}
+
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating-bar {
+    background-color: #e0e0e0;
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+    background-color: #4CAF50;
+}

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    background: url("https://wallpaperaccess.com/full/1298631.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos de cada sección */
+.header-section, .description, .characters, .rating-container, .buttons-section {
+    margin: 20px 0;
+}
+
+.game-title {
+    color: #00ff88; /* Verde brillante */
+    text-align: center;
+    font-size: 2em;
+}
+
+.description h2, .characters h2, .rating-container h2 {
+    color: #00ff88;
+    text-align: center;
+}
+
+/* Imagen */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.p{
+    text-align: center;
+}
+
+/* Calificación */
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    color: #ddd;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.rating input[type="radio"]:checked ~ label {
+    color: #00ff88; /* Verde brillante para estrellas seleccionadas */
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #00ff88;
+}
+
+/* Botones */
+button, .youtube-link {
+    display: inline-block;
+    background-color: #00ff88;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin: 10px 5px;
+    text-decoration: none;
+}
+
+button:hover, .youtube-link:hover {
+    background-color: #00cc70;
+}
