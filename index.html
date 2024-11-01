@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos y configuración de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameZone - Tu Portal de Videojuegos</title>
+    
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/logazo.png" type="image/x-icono">
 </head>
 <body>
     <header>
+        <!-- Navegación principal -->
         <nav>
+            <!-- Logotipo y nombre del sitio -->
             <a at="Bootstrap" class="logo">🎮🕹️GameZone🕹️🎮</a>
+            
+            <!-- Enlaces de navegación -->
             <div class="nav-links">
-                <!-- logo de la pagina -->
+                <!-- Imagen del logo de la página -->
                 <img src="assets/logazo.png" alt="Bootstrap" width="40" height="40">
+                
+                <!-- Enlaces de las secciones principales -->
                 <a href="#inicio">Inicio</a>
                 <a href="#juegos">Juegos</a>
                 <a href="#noticias">Noticias</a>
                 <a href="#reviews">Reviews</a>
-                <a href="#Menu de juegos">tabla</a>
+                <a href="#Menu de juegos">Tabla</a>
             </div>
+            
+            <!-- Menú desplegable para seleccionar juegos específicos -->
             <div class="dropdown" class="nav-links">
-              <button class="dropbtn">Selecciona una página</button>
-              <div class="dropdown-content">
-                <a href="http://127.0.0.1:5500/The%20last%20guardian.html" target="_blank">The the-last-guardian</a>
-                <a href="http://127.0.0.1:5500/Cyberpunk.html" target="_blank">Cyberpunk</a>
-                <a href="http://127.0.0.1:5500/eldenRing.html" target="_blank">eldenRing</a>
-              </div>
+                <button class="dropbtn">Selecciona una página</button>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/The%20last%20guardian.html" target="_blank">The Last Guardian</a>
+                    <a href="http://127.0.0.1:5500/Cyberpunk.html" target="_blank">Cyberpunk</a>
+                    <a href="http://127.0.0.1:5500/eldenRing.html" target="_blank">Elden Ring</a>
+                </div>
             </div>
           
+            <!-- Enlace al archivo JavaScript -->
             <script src="script.js"></script>
           
         </nav>
     </header>
 
     <main>
+        <!-- Sección de bienvenida o introducción -->
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h1>Bienvenido a GameZone</h1>
@@ -42,18 +57,21 @@
             </div>
         </section>
 
+        <!-- Sección de juegos destacados -->
         <section id="juegos">
             <h2 class="section-title">Juegos Destacados</h2>
             <div class="game-grid">
+                <!-- Tarjeta de juego 1 -->
                 <div class="game-card">
                     <img src="assets/the-last-guardian.jpg" alt="Juego 1">
                     <div class="game-card-content">
                         <h3>The Last Guardian😤</h3>
                         <p>Una aventura épica de amistad y supervivencia</p>
-                        <a href="https://www.playstation.com/es-es/games/the-last-guardian/" target="_blank">The the-last-guardian (game)</a> <br>
-
+                        <a href="https://www.playstation.com/es-es/games/the-last-guardian/" target="_blank">The Last Guardian (game)</a> <br>
                     </div>
                 </div>
+                
+                <!-- Tarjeta de juego 2 -->
                 <div class="game-card">
                     <img src="assets/ciber phunk.jpeg" alt="Juego 2">
                     <div class="game-card-content">
@@ -62,6 +80,8 @@
                         <a href="https://store.steampowered.com/agecheck/app/1091500/" target="_blank">Cyberpunk (game)</a> <br>
                     </div>
                 </div>
+                
+                <!-- Tarjeta de juego 3 -->
                 <div class="game-card">
                     <img src="assets/elden-ring-button-03-1623460560664.jpg" alt="Juego 3">
                     <div class="game-card-content">
@@ -72,45 +92,68 @@
                 </div>
             </div>
         </section>
-            <hr>
+        
+        <hr>
+
+        <!-- Sección de últimas noticias -->
         <section id="noticias">
             <h2 class="section-title">Últimas Noticias</h2>
             <div class="news-grid">
+                <!-- Tarjeta de noticia 1 -->
                 <article class="news-card">
                     <h3>Nuevo DLC anunciado para Elden Ring</h3>
                     <p>FromSoftware ha revelado detalles sobre la próxima expansión...</p>
                 </article>
+                
+                <!-- Tarjeta de noticia 2 -->
                 <article class="news-card">
                     <h3>GTA VI: Rumores y Filtraciones 😶‍🌫️</h3>
                     <p>Todo lo que sabemos hasta ahora sobre el próximo título de Rockstar...</p>
                 </article>
+                
+                <!-- Tarjeta de noticia 3 -->
                 <article class="news-card">
                     <h3>E3 2024: Qué Esperar🙂</h3>
                     <p>Una vista previa de los anuncios más anticipados...</p>
                 </article>
             </div>
         </section>
-            <hr>
+
+        <hr>
+
+        <!-- Sección de reseñas recientes -->
         <section id="reviews" class="reviews-section">
             <h2 class="section-title">Reviews Recientes</h2>
+            
+            <!-- Reseña 1 -->
             <div class="review">
                 <h3>Final Fantasy XVI🚞⚔️</h3>
                 <p>Un viaje épico que redefine el género RPG de acción...</p>
             </div>
+            
+            <!-- Reseña 2 -->
             <div class="review">
                 <h3>Starfield👨‍🚀🌑</h3>
                 <p>La nueva epopeya espacial de Bethesda nos lleva a las estrellas...</p>
             </div>
+            
+            <!-- Reseña 3 -->
             <div class="review">
                 <h3>Spider-Man 2🕸️🕷️</h3>
                 <p>La secuela que supera todas las expectativas...</p>
             </div>
         </section>
-            <hr>
+
+        <hr>
           
+    </main>
+
+    <!-- Pie de página -->
     <footer>
         <p>GameZone © 2024 -🎮 Tu portal de videojuegos 🎮</p>
     </footer>
+    
+    <!-- Enlace al archivo JavaScript para el menú desplegable -->
     <script src="JS/dropdonw.JS"></script>
 </body>
 </html>

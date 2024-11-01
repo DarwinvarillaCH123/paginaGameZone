@@ -1,95 +1,106 @@
+/* Estilo general del cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    color: #fff;
+    font-family: Arial, sans-serif; /* Fuente sin serif para el texto */
+    color: #fff; /* Color del texto en blanco */
     margin: 0;
     padding: 20px;
-    background: url("https://wallpaperaccess.com/full/1298631.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background: url("https://wallpaperaccess.com/full/1298631.jpg") no-repeat center center fixed; /* Fondo de imagen fija y centrada */
+    background-size: cover; /* La imagen cubre toda la pantalla */
 }
 
+/* Contenedor principal de la página */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
     background-color: #1a1a1a; /* Fondo oscuro */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 20px; /* Espaciado interno del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Sombra alrededor del contenedor */
 }
 
-/* Estilos de cada sección */
+/* Estilo de las secciones individuales */
 .header-section, .description, .characters, .rating-container, .buttons-section {
-    margin: 20px 0;
+    margin: 20px 0; /* Espaciado superior e inferior para separar secciones */
 }
 
+/* Estilo del título del juego */
 .game-title {
-    color: #00ff88; /* Verde brillante */
-    text-align: center;
-    font-size: 2em;
+    color: #00ff88; /* Color verde brillante */
+    text-align: center; /* Centrado del texto */
+    font-size: 2em; /* Tamaño de fuente grande */
 }
 
+/* Estilo de encabezados en las diferentes secciones */
 .description h2, .characters h2, .rating-container h2 {
-    color: #00ff88;
-    text-align: center;
+    color: #00ff88; /* Color verde brillante */
+    text-align: center; /* Centrado de los encabezados */
 }
 
-/* Imagen */
+/* Estilos de la imagen */
 .image-container {
-    text-align: center;
-    margin: 20px 0;
+    text-align: center; /* Centra la imagen dentro del contenedor */
+    margin: 20px 0; /* Espaciado superior e inferior */
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 100%; /* La imagen no supera el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para hacer que la imagen resalte */
 }
-.p{
+
+/* Estilo de los párrafos centrados */
+.p {
     text-align: center;
 }
 
-/* Calificación */
+/* Estilo de la calificación con estrellas */
 .rating {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    display: flex; /* Usa flexbox para alinear estrellas */
+    justify-content: center; /* Centra las estrellas */
+    gap: 10px; /* Espacio entre estrellas */
 }
 
+/* Esconde los botones de radio para que solo se vean las estrellas */
 .rating input[type="radio"] {
     display: none;
 }
 
+/* Estilo de las estrellas */
 .rating label {
-    color: #ddd;
-    font-size: 24px;
-    cursor: pointer;
+    color: #ddd; /* Color gris claro para estrellas sin seleccionar */
+    font-size: 24px; /* Tamaño de fuente grande para estrellas */
+    cursor: pointer; /* Cambia el cursor a puntero */
 }
 
+/* Estilo para estrellas seleccionadas */
 .rating input[type="radio"]:checked ~ label {
     color: #00ff88; /* Verde brillante para estrellas seleccionadas */
 }
 
+/* Efecto hover para las estrellas */
 .rating label:hover,
 .rating label:hover ~ label {
-    color: #00ff88;
+    color: #00ff88; /* Verde brillante para efecto hover */
 }
 
-/* Botones */
+/* Estilo de los botones */
 button, .youtube-link {
-    display: inline-block;
-    background-color: #00ff88;
-    color: #1a1a1a;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-    margin: 10px 5px;
-    text-decoration: none;
+    display: inline-block; /* Los botones se muestran en línea */
+    background-color: #00ff88; /* Fondo verde brillante */
+    color: #1a1a1a; /* Texto oscuro */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px 30px; /* Relleno interno de los botones */
+    font-size: 16px; /* Tamaño de fuente de los botones */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    transition: background-color 0.3s; /* Transición para efecto de cambio de color */
+    text-align: center; /* Centrado del texto en los botones */
+    margin: 10px 5px; /* Margen alrededor de los botones */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
+/* Efecto hover para los botones */
 button:hover, .youtube-link:hover {
-    background-color: #00cc70;
+    background-color: #00cc70; /* Fondo verde oscuro para efecto hover */
 }
