@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/logazo.png" type="image/x-icon">
   <link rel="stylesheet" href="CSS/style4.css">
-  <title>Elden Ring</title>
-  
+  <title>Elden Ring - GameZone</title>
 </head>
 <body>
   <header>
     <h1>Elden Ring</h1>
     <img src="assets/logazo.png" alt="Bootstrap" width="40" height="40">
     <h4>🎮🕹️GameZone🕹️🎮</h4>
-
   </header>
+  
   <main>
-    <section>
+    <section class="about">
       <h2>Acerca del juego</h2>
-        <p>*Elden Ring* es un videojuego de rol y acción desarrollado por FromSoftware, en colaboración con el escritor George R. R. Martin. <br>Ambientado en un vasto mundo de fantasía llamado "Las Tierras Intermedias," ofrece una experiencia de juego inmersiva con combates desafiantes,<br> exploración libre y una narrativa profunda. Los jugadores encarnan a un "Sinluz" que debe restaurar el orden en un mundo fragmentado y lleno de enemigos poderosos, <br>explorando desde majestuosos castillos hasta tenebrosos bosques en su búsqueda de superar desafíos épicos.</p>    
-   </section>
-    <section>
+      <p><strong>Elden Ring</strong> es un videojuego de rol y acción desarrollado por FromSoftware, en colaboración con el escritor George R. R. Martin. Ambientado en "Las Tierras Intermedias," ofrece combates desafiantes, exploración libre y una narrativa profunda. Los jugadores encarnan a un "Sinluz" que debe restaurar el orden en un mundo fragmentado, lleno de enemigos poderosos.</p>
+    </section>
+    
+    <section class="features">
       <h2>Características del juego</h2>
       <ul>
         <li>Mundo abierto vasto y detallado</li>
@@ -29,21 +29,29 @@
         <li>Historia y lore desarrollados por George R.R. Martin</li>
       </ul>
     </section>
-    <section>
+    
+    <section class="screenshots">
       <h2>Capturas de pantalla</h2>
-      <img src="assets/Elden_Ring_game_screen.jpg" alt="Captura del game" class="screenshot">
+      <img src="assets/Elden_Ring_game_screen.jpg" alt="Captura del juego" class="screenshot">
+    </section>
+    
+    <section class="rating-section">
+      <h2>Valora el juego</h2>
+      <div class="rating">
+        <input type="radio" name="star" id="star5"><label for="star5">★</label>
+        <input type="radio" name="star" id="star4"><label for="star4">★</label>
+        <input type="radio" name="star" id="star3"><label for="star3">★</label>
+        <input type="radio" name="star" id="star2"><label for="star2">★</label>
+        <input type="radio" name="star" id="star1"><label for="star1">★</label>
+      </div>
+      <button id="redirectButton">Volver a GameZone</button>
     </section>
   </main>
+  
+  <footer>
+    <p>© 2024 GameZone. Todos los derechos reservados.</p>
+  </footer>
 
-<h2 class="h22">Valora el juego compa</h2>
-<div class="rating">
-    <input type="radio" name="star" id="star5"><label for="star5">★</label>
-    <input type="radio" name="star" id="star4"><label for="star4">★</label>
-    <input type="radio" name="star" id="star3"><label for="star3">★</label>
-    <input type="radio" name="star" id="star2"><label for="star2">★</label>
-    <input type="radio" name="star" id="star1"><label for="star1">★</label>
-</div>
-<button id="redirectButton">volver a GameZone</button>
-<script src="JS/javascripter.JS"></script>
+  <script src="JS/javascripter.js"></script>
 </body>
 </html>
