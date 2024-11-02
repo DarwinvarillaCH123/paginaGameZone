@@ -98,9 +98,15 @@ button, .youtube-link {
     text-align: center; /* Centrado del texto en los botones */
     margin: 10px 5px; /* Margen alrededor de los botones */
     text-decoration: none; /* Elimina el subrayado del enlace */
+    box-shadow: 0px 4px 8px rgb(0, 255, 128);
+}
+#redirectButton:hover {
+    background-color: #0cf33e;
+    box-shadow: 0px 4px 8px rgba(0, 255, 128, 0.5);
 }
 
 /* Efecto hover para los botones */
 button:hover, .youtube-link:hover {
     background-color: #00cc70; /* Fondo verde oscuro para efecto hover */
+    transition: background-color 0.3s, box-shadow 0.3s;
 }

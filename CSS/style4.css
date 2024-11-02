@@ -1,4 +1,5 @@
 body {
+  background: url("https://areajugones.sport.es/wp-content/uploads/2023/06/fyt08hfwyaarnci.jpeg") center/cover fixed;
   font-family: "Roboto", sans-serif; /* Cambiado a Roboto para un estilo más moderno */
   margin: 0;
   padding: 0;
@@ -8,15 +9,16 @@ body {
 }
 
 header {
-  background-color: #000000;
-  color: #33fe00;
+  background-color: #077a7d;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Añadida sombra */
+  box-shadow: 0 2px 5px rgba(0, 255, 255, 0.5); /* Añadida sombra */
 }
 
 main {
-  padding: 20px;
+  padding: 300px;
+
 }
 
 section {
@@ -24,15 +26,16 @@ section {
 }
 
 h2 {
-  color: #3cff00;
-  text-shadow: 0 2px 4px rgba(0, 255, 127, 0.5); /* Añadida sombra a los títulos */
+  color: #f6ef8f;
+  text-shadow: 0 2px 4px rgba(232, 120, 120, 0.934); /* Añadida sombra a los títulos */
+  text-align: center;
 }
 
 .about, .features, .screenshots, .rating-section {
-  background-color: #1c1c1c;
+  background-color:#007483;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Añadida sombra */
+  box-shadow: 0 2px 5px rgba(255, 5, 1, 0.5); /* Añadida sombra */
 }
 
 p {
@@ -45,7 +48,8 @@ ul {
 }
 
 .screenshot {
-  max-width: 100%;
+  text-align: center;
+  max-width: 50%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -81,6 +85,7 @@ ul {
 }
 
 button {
+  text-align:center;
   background-color: #28a745;
   color: white;
   border: none;
@@ -97,8 +102,8 @@ button:hover {
 }
 
 footer {
-  background-color: #000000;
-  color: #33fe00;
+  background-color: #046b5f;
+  color: #fdeb65;
   text-align: center;
   padding: 15px 0;
 }
